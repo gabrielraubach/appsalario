@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/black"
+        android:text="Digite seu salário"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/edSal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSal" />
+    <TextView
+        android:id="@+id/txtPer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edSal"
+        android:textSize="35dp"
+        android:text="Selecione seu percental" />
+    <RadioGroup
+        android:layout_below="@id/txtPer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupo">
+        <RadioButton
+            android:id="@+id/rb40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPer"
+            android:text="40"
+            android:textSize="30dp"
+            />
+        <RadioButton
+            android:id="@+id/rb45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb40"
+            android:text="45"
+            android:textSize="30dp"
+            />
+        <RadioButton
+            android:id="@+id/rb50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb45"
+            android:text="50"
+            android:textSize="30dp"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn"
+        android:layout_below="@+id/grupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Calcular"
+        android:textSize="30dp"
+        />
+
+
+
+
+</RelativeLayout>
